@@ -1,0 +1,137 @@
+#root
+{
+    margin:0;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1,h2
+{
+    width:100%;
+    text-align:center;
+    margin:2.5vw 0;
+}
+#query
+{
+    width:100vw;
+    height:2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input
+{
+    width:30%;
+    height:100%;
+    border-width:0;
+    box-shadow: 0.1vw 0.1vw 1vw silver;
+    padding:0.5vw;
+    border-radius: 2.5vw;
+    padding-left:1.5vw;
+    font-size:1vw;
+}
+input:focus
+{
+    outline: 0;
+}
+button
+{
+    width:5%;
+    height:3.5vw;
+    border-radius:1vw;
+    margin-left:1vw;
+}
+button:hover
+{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+#result
+{
+    width:100%;
+    margin-top:3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.rect
+{
+    width:26%;
+    box-shadow: 0.1vw 0.1vw 1vw grey;
+    margin:1.5vw 0;
+    border-radius: 3vw;
+    background-image: linear-gradient(to bottom right,white,rgb(243, 243, 243));
+}
+h3
+{
+    width:100%;
+    text-align: center;
+    margin-bottom: 2.5vw;
+}
+@media screen and (max-width:1025px)
+{
+    #query
+    {
+        margin:5vw 0;
+    }
+    input
+    {
+        width:65%;
+        height:4vw;
+        font-size:2vw;
+        padding-left:3vw;
+    }
+    button
+    {
+        width:15%;
+        height:5vw;
+    }
+    .rect
+    {
+        width:40%;
+        padding:5vw 0;
+    }
+}
+@media screen and (max-width:515px)
+{
+    h1
+    {
+        font-size: 8vw;
+        margin:8vw 0;
+    }
+    #query
+    {
+        margin-top: 10vw;
+    }
+    input
+    {
+        width:65%;
+        height:10vw;
+        font-size:4vw;
+        padding-left: 4vw;
+    }
+    button
+    {
+        width:20%;
+        height:11vw;
+        border-radius: 2vw;
+    }
+    #result
+    {
+        margin: 7vw 0;
+    }
+    .rect
+    {
+        width:80%;
+        margin-top:5vw;
+        padding:5vw 0;
+    }
+    h2,h3
+    {
+        font-size: 7vw;
+    }
+}
